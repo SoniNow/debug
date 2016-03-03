@@ -72,14 +72,13 @@ function debug_save_setting() {
         $error_script = isset($_POST['error_script']) ? trim($_POST['error_script']) : '0';
         $error_savequery = isset($_POST['error_savequery']) ? trim($_POST['error_savequery']) : '0';
         if ($enable_notification == '1') {
-            $error_reporting = $error_log = $display_error = $error_script = $error_savequery = '1';
+            $error_reporting = $error_log = $error_script = $error_savequery = '1';
             if (!is_email($email_notification)) {
                 $is_update = 0;
             }
         }
         $fileName = 'wp-config.php';
         $fileContent = debug_file_read($fileName);
-
         $fileContent = debug_add_option($error_reporting, 'WP_DEBUG', $fileContent);
         $fileContent = debug_add_option($error_log, 'WP_DEBUG_LOG', $fileContent);
         $fileContent = debug_add_option($display_error, 'WP_DEBUG_DISPLAY', $fileContent);

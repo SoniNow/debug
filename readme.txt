@@ -4,7 +4,7 @@ Donate link: http://www.soninow.com/
 Tags: error, debug, error reporting, development, develop, error log, error notification, notification email, debug notification, bug report, display error, issues, issue, find bug, email notification, multisite
 Requires at least: 3.4
 Tested up to: 4.4.5
-Stable tag: 1.6
+Stable tag: 1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,6 +33,9 @@ e.g.
 5. **Debug No Log File**: see if no debug.log file exist.
 
 == Changelog ==
+= 1.7: Mar 2, 2016 =
+* BugFix: Display error not required for email notification enable.
+
 = 1.6: Jan 24, 2016 =
 * Add: Email Notification Settings on plugin setting page.
 * BugFix: Resolved any user to download debug.log and wp-config.php file. now only super admin can download files.
